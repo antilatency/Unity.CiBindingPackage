@@ -1,0 +1,19 @@
+{
+    "name": "Antilatency.BuildingCi.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.XR.Management.Editor",
+        "Unity.XR.Management"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

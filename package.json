@@ -1,0 +1,16 @@
+{
+  "name": "com.antilatency.ci-binding",
+  "displayName": "CI Binding",
+  "version": "1.0.0",
+  "unity": "2019.4",
+  "description": "This package binding the CI/CD pipeline into Unity projects with utility classes.",
+  "documentationUrl": "https://developers.antilatency.com/Root/Index_en.html",
+  "keywords": [
+    "ci"
+  ],
+  "author": {
+    "name": "Antilatency",
+    "homepage": "https://antilatency.com",
+    "email": "info@antilatency.com"
+  }
+}
