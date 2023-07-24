@@ -1,7 +1,7 @@
 {
   "name": "com.antilatency.ci-binding",
   "displayName": "CI Binding",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "unity": "2021.3",
   "description": "This package binding the CI/CD pipeline into Unity projects with utility classes.",
   "documentationUrl": "https://developers.antilatency.com/Root/Index_en.html",
