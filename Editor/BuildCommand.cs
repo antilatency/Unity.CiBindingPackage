@@ -29,11 +29,10 @@ static class BuildCommand {
 
         var buildPath = GetBuildPath();
         var buildName = GetBuildName();
+        PlayerSettings.productName = buildName;
         var buildOptions = GetBuildOptions();
-
         var scriptingBackend = GetScriptingBackend();
         PlayerSettings.SetScriptingBackend(targetGroup, scriptingBackend);
-        PlayerSettings.productName = GetProductName();
 
         Console.WriteLine($":: Ready to start build on {buildTarget}.");
         var fixedBuildPath = GetFixedBuildPath(buildTarget, buildPath, buildName);
@@ -50,14 +49,6 @@ static class BuildCommand {
 
     ///////////////////// Utility Methods /////////////////////
 
-    static string GetProductName() {
-        string productName = GetArgument("productName");
-        Console.WriteLine(":: Received productName: " + productName);
-        if (productName == null) {
-            return PlayerSettings.productName;
-        }
-        return productName;
-    }
     static bool IsDevelopmentType() {
         if (TryGetEnv(IS_DEVELOPMENT_BUILD, out string value)) {
             return bool.Parse(value);
