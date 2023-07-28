@@ -61,7 +61,7 @@ static class BuildCommand {
     private static void HandleDevelopmentType(bool isDevelopmentBuild) {
         EditorUserBuildSettings.development = isDevelopmentBuild;
         PlayerSettings.SplashScreen.show = isDevelopmentBuild;
-        Debug.unityLogger.logEnabled = isDevelopmentBuild;
+        UnityEngine.Debug.unityLogger.logEnabled = isDevelopmentBuild;
 
         Console.WriteLine(
             $":: {IS_DEVELOPMENT_BUILD} env var detected, setting \"Development Build\" to {isDevelopmentBuild}.");
